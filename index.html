@@ -1103,9 +1103,11 @@
 
 <!-- Call Popup Script -->
 <script>
-  // Show popup when page loads or refreshes
+  // Show popup 5 seconds after page loads or refreshes
   window.addEventListener('load', function() {
-    document.getElementById('callPopupOverlay').style.display = 'flex';
+    setTimeout(function() {
+      document.getElementById('callPopupOverlay').style.display = 'flex';
+    }, 5000);
   });
 
   // Function to close popup
